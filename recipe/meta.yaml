@@ -23,34 +23,33 @@ build:
 requirements:
   build:
     - {{ posix }}zip               # [win]
+    - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
-    - r-dt >=0.4
-    - r-luminescence >=0.8.5
-    - r-rcarb >=0.1.0
-    - r-data.table >=1.10.4
-    - r-googlevis >=0.6.2
-    - r-knitr >=1.20
-    - r-readxl >=1.1.0
-    - r-rhandsontable >=0.3.4
-    - r-rmarkdown >=1.11
-    - r-shiny >=1.1.0
-    - r-shinydashboard >=0.7.0
-    - r-shinyjs >=1.0
+    - r-dt >=0.20
+    - r-luminescence >=0.9.17
+    - r-rcarb >=0.1.4
+    - r-data.table >=1.14.2
+    - r-googlevis >=0.6.11
+    - r-knitr >=1.37
+    - r-markdown >=1.1
+    - r-readxl >=1.3.1
+    - r-rhandsontable >=0.3.8
+    - r-shiny >=1.7.0
+    - r-shinydashboard >=0.7.2
   run:
     - r-base
-    - r-dt >=0.4
-    - r-luminescence >=0.8.5
-    - r-rcarb >=0.1.0
-    - r-data.table >=1.10.4
-    - r-googlevis >=0.6.2
-    - r-knitr >=1.20
-    - r-readxl >=1.1.0
-    - r-rhandsontable >=0.3.4
-    - r-rmarkdown >=1.11
-    - r-shiny >=1.1.0
-    - r-shinydashboard >=0.7.0
-    - r-shinyjs >=1.0
+    - r-dt >=0.20
+    - r-luminescence >=0.9.17
+    - r-rcarb >=0.1.4
+    - r-data.table >=1.14.2
+    - r-googlevis >=0.6.11
+    - r-knitr >=1.37
+    - r-markdown >=1.1
+    - r-readxl >=1.3.1
+    - r-rhandsontable >=0.3.8
+    - r-shiny >=1.7.0
+    - r-shinydashboard >=0.7.2
 
 test:
   commands:
