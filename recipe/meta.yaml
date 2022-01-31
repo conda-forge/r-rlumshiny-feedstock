@@ -1,4 +1,4 @@
-{% set version = '0.2.2' %}
+{% set version = "0.2.3" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/RLumShiny_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/RLumShiny/RLumShiny_{{ version }}.tar.gz
-  sha256: 6ffc4c7a4839a2280309e7c4da0a8e60e001874648f9df2ee18c11534a299467
+  sha256: 6da365ce03a66d4527ef9d75af9d1f777a836ac839d92a8a823bac403018ac89
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -60,14 +60,11 @@ test:
 about:
   home: https://tzerk.github.io/RLumShiny/
   license: GPL-3.0-only
-  summary: A collection of 'shiny' applications for the R package 'Luminescence'. These mainly,
-    but not exclusively, include applications for plotting chronometric data from e.g.
-    luminescence or radiocarbon dating. It further provides access to bootstraps tooltip
-    and popover functionality and contains the 'jscolor.js' library with a custom 'shiny'
-    output binding.
+  summary: A collection of 'shiny' applications for the R package 'Luminescence'. These mainly, but not exclusively, include applications for plotting chronometric data from e.g. luminescence or radiocarbon dating. It further provides access to bootstraps tooltip and popover functionality and contains the 'jscolor.js' library
+    with a custom 'shiny' output binding.
   license_family: GPL3
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
