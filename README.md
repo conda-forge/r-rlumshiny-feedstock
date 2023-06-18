@@ -1,11 +1,11 @@
-About r-rlumshiny
-=================
+About r-rlumshiny-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rlumshiny-feedstock/blob/main/LICENSE.txt)
 
 Home: https://tzerk.github.io/RLumShiny/
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rlumshiny-feedstock/blob/main/LICENSE.txt)
 
 Summary: A collection of 'shiny' applications for the R package 'Luminescence'. These mainly, but not exclusively, include applications for plotting chronometric data from e.g. luminescence or radiocarbon dating. It further provides access to bootstraps tooltip and popover functionality and contains the 'jscolor.js' library with a custom 'shiny' output binding.
 
