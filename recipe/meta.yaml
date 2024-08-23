@@ -1,6 +1,5 @@
 {% set version = "0.2.3" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-rlumshiny
@@ -13,8 +12,7 @@ source:
   sha256: 6da365ce03a66d4527ef9d75af9d1f777a836ac839d92a8a823bac403018ac89
 
 build:
-  merge_build_host: true  # [win]
-  number: 2
+  number: 3
   noarch: generic
   rpaths:
     - lib/R/lib/
