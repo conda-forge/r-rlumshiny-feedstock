@@ -25,31 +25,31 @@ requirements:
   host:
     - r-base
     - r-dt >=0.33
-    - r-luminescence >=1.0.1
+    - r-luminescence >=1.1.0
     - r-rcarb >=0.1.6
-    - r-data.table >=1.17.0
+    - r-data.table >=1.17.6
     - r-googlevis >=0.7.3
-    - r-knitr >=1.49
+    - r-knitr >=1.50
     - r-leaflet >=2.2.2
     - r-markdown >=1.13
-    - r-readxl >=1.4.3
+    - r-readxl >=1.4.5
     - r-rhandsontable >=0.3.8
-    - r-shiny >=1.10.0
-    - r-shinydashboard >=0.7.2
+    - r-shiny >=1.11.1
+    - r-shinydashboard >=0.7.3
   run:
     - r-base
     - r-dt >=0.33
-    - r-luminescence >=1.0.1
+    - r-luminescence >=1.1.0
     - r-rcarb >=0.1.6
-    - r-data.table >=1.17.0
+    - r-data.table >=1.17.6
     - r-googlevis >=0.7.3
-    - r-knitr >=1.49
+    - r-knitr >=1.50
     - r-leaflet >=2.2.2
     - r-markdown >=1.13
-    - r-readxl >=1.4.3
+    - r-readxl >=1.4.5
     - r-rhandsontable >=0.3.8
-    - r-shiny >=1.10.0
-    - r-shinydashboard >=0.7.2
+    - r-shiny >=1.11.1
+    - r-shinydashboard >=0.7.3
 
 test:
   commands:
