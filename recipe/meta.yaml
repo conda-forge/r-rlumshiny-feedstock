@@ -1,4 +1,4 @@
-{% set version = "0.2.4" %}
+{% set version = "0.2.5" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/RLumShiny_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/RLumShiny/RLumShiny_{{ version }}.tar.gz
-  sha256: f2af0731b9bcee55eace6363112275281e08196097aa1bf6a30821c18f0ccf47
+  sha256: afa48dc8c9a8b411def14f34ad26018266ead3e5274c21f49839d46522ccffcd
 
 build:
   number: 0
@@ -25,31 +25,31 @@ requirements:
   host:
     - r-base
     - r-dt >=0.33
-    - r-luminescence >=1.0.1
+    - r-luminescence >=1.1.0
     - r-rcarb >=0.1.6
-    - r-data.table >=1.17.0
+    - r-data.table >=1.17.6
     - r-googlevis >=0.7.3
-    - r-knitr >=1.49
+    - r-knitr >=1.50
     - r-leaflet >=2.2.2
     - r-markdown >=1.13
-    - r-readxl >=1.4.3
+    - r-readxl >=1.4.5
     - r-rhandsontable >=0.3.8
-    - r-shiny >=1.10.0
-    - r-shinydashboard >=0.7.2
+    - r-shiny >=1.11.1
+    - r-shinydashboard >=0.7.3
   run:
     - r-base
     - r-dt >=0.33
-    - r-luminescence >=1.0.1
+    - r-luminescence >=1.1.0
     - r-rcarb >=0.1.6
-    - r-data.table >=1.17.0
+    - r-data.table >=1.17.6
     - r-googlevis >=0.7.3
-    - r-knitr >=1.49
+    - r-knitr >=1.50
     - r-leaflet >=2.2.2
     - r-markdown >=1.13
-    - r-readxl >=1.4.3
+    - r-readxl >=1.4.5
     - r-rhandsontable >=0.3.8
-    - r-shiny >=1.10.0
-    - r-shinydashboard >=0.7.2
+    - r-shiny >=1.11.1
+    - r-shinydashboard >=0.7.3
 
 test:
   commands:
